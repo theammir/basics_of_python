@@ -39,6 +39,8 @@ To aknowledge this, add "(DEVELOPMENT MODE)" to the first question title.
 Quizzes with this literal substring in any question will not be graded by the
 system no matter the action taken.
 
+In development mode, mark correct answers with `__DEBUG_CORRECT_ANSWER_MARK` at the end of the answer.
+
 # Developer settings
 
 Below are bash-like settings, fetched from the environment programmatically.
@@ -47,6 +49,6 @@ Ensure that all of them are set before proceeding.
 
 ```
 DEVELOPER_SECRET=cd72204d-8ddc-411c-bf13-e92720ceea42
-__DEBUG_CORRECT_ANSWER_MARK='(x)' # mark the correct answer with this string
+__DEBUG_CORRECT_ANSWER_MARK='*'
 ```
 """
